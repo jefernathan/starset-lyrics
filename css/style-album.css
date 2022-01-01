@@ -1,0 +1,39 @@
+@font-face {
+    font-family: VT323;
+    src: url(../font/VT323-Regular.ttf);
+}
+
+:root {
+    --dark_green: #181f18;
+    --light_green: #0e0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--dark_green);
+}
+
+h1, p {
+    font-family: VT323, sans-serif;
+    text-align: center;
+    color: var(--light_green);
+    text-shadow: var(--light_green) 0px 0px 5px;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 2em;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
