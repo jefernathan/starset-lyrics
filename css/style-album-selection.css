@@ -1,4 +1,45 @@
+@font-face {
+    font-family: VT323;
+    src: url(../font/VT323-Regular.ttf);
+}
+
+:root {
+    --black: #000;
+    --dark_green: #181f18;
+    --light_green: #0e0;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body {
+    background-color: var(--dark_green);
+}
+
+div#album {
+    display: inline-block;
+    background: var(--black);
+    width: 30vh;
+    height: 37vh;
+    border: 5px var(--black) solid;
+    border-radius: 10px;
+    margin: 15px 2px;
+}
+
+div#album > img {
+    height: 30vh;
+    width: 30vh;
+}
+
+p {
+    font-family: VT323, sans-serif;
+    color: var(--light_green);
+    text-align: center;
+    font-size: 2em;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
