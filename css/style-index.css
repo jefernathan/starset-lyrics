@@ -1,7 +1,6 @@
 :root {
+    --background: #030 ;
     --black: #000;
-    --dark_green: #181f18;
-    --light_green: #0e0;
 }
 
 * {
@@ -21,10 +20,10 @@ html {
 body {
     display: table-cell;
     vertical-align: middle;
-    background-color: var(--black);
+    background-color: var(--background);
 }
 
-div#screen_border {
+div#screen {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,19 +33,10 @@ div#screen_border {
     height: 75vw;
     /* 3/4 = .75 */
     max-height: 100vh;
-    background-color: darkslategray;
-    border-radius: 15px;
-}
-
-div#screen {
-    background-color: var(--dark_green);
-    width: 90%;
-    height: 90%;
-    border-radius: 15px;
+    background-color: var(--black);
 }
 
 iframe {
     width: 100%;
-    border-radius: 15px;
     height: 100%;
 }
