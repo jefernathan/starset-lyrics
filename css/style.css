@@ -34,11 +34,34 @@ body {
 }
 
 main {
-    width: 100vw;
+    width: 98vw;
     max-width: 133.33vh;
     /* 4/3 = 1.333 */
     height: 75vw;
     /* 3/4 = .75 */
-    max-height: 100vh;
+    max-height: 98vh;
     background-color: var(--black);
+    border-radius: 10px;
+}
+
+header {
+    position: fixed;
+    top: 0vh;
+    left: 170vh;
+    padding: 10px;
+}
+
+header > a > img {
+    border-radius: 10px;
+    width: 3em;
+    height: 3em;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--black);
+    width: 1.5vh;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark_green);
 }
