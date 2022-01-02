@@ -1,21 +1,5 @@
-@font-face {
-    font-family: VT323;
-    src: url(../font/VT323-Regular.ttf);
-}
-
 :root {
-    --background: #030 ;
-    --dark_green: #0a0;
-    --green: #0f0;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    padding: 20px;
+    --background: #030;
 }
 
 div#album {
@@ -25,7 +9,8 @@ div#album {
     background: var(--background);
     border: 5px var(--background) solid;
     border-radius: 10px;
-    margin: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 div#album > img {
@@ -33,18 +18,7 @@ div#album > img {
     width: 12em;
 }
 
-p {
-    font-family: VT323, sans-serif;
-    color: var(--green);
+a > p {
     text-align: center;
     font-size: 2em;
-}
-
-::-webkit-scrollbar {
-    background-color: var(--transparent);
-    width: 1.5vh;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--dark_green);
 }

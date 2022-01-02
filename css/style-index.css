@@ -1,51 +1,12 @@
-@font-face {
-    font-family: VT323;
-    src: url(../font/VT323-Regular.ttf);
-}
-
 :root {
-    --background: #030 ;
-    --black: #000;
-    --dark_green: #0a0;
     --green: #0f0;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    display: table-cell;
-    vertical-align: middle;
-    background-color: var(--background);
-}
-
-main {
-    width: 100vw;
-    max-width: 133.33vh;
-    /* 4/3 = 1.333 */
-    height: 75vw;
-    /* 3/4 = .75 */
-    max-height: 100vh;
-    background-color: var(--black);
-}
-
 h1 {
-    font-family: VT323, sans-serif;
     font-size: 7em;
     text-align: center;
-    color: var(--green); 
     border: 5px var(--green) solid;
+    box-shadow: var(--green) 0px 0px 5px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,10 +15,8 @@ h1 {
 }
 
 a {
-    font-family: VT323, sans-serif;
     font-size: 3em;
     text-align: center;
-    color: var(--green);
     position: absolute;
     top: 70%;
     left: 50%;
