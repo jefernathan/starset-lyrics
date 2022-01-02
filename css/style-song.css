@@ -8,3 +8,8 @@ p {
     font-size: 2em;
     text-align: center;
 }
+
+main {
+    overflow-y: scroll;
+    direction: ltr;
+}

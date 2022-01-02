@@ -64,4 +64,5 @@ header > a > img {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--dark_green);
+    border-radius: 10px;
 }
