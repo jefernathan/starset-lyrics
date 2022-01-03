@@ -1,6 +1,6 @@
 main > a {
-    font-size: 2em;
+    font-size: 5vh;
     display: block;
     text-align: center;
-    padding: 3px;
+    padding: .5vh;
 }

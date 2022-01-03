@@ -1,15 +1,33 @@
 h1 {
-    font-size: 3em;
+    font-size: 10vh;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 5vh;
 }
 
 p {
-    font-size: 2em;
+    font-size: 5vh;
     text-align: center;
 }
 
 main {
     overflow-y: scroll;
     direction: ltr;
+}
+
+aside {
+    position: fixed;
+    top: 86vh;
+    left: 172vh;
+}
+
+aside > iframe {
+    border-radius: 2vh;
+    width: 35vh;
+    height: 12vh;
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 7vh;
 }

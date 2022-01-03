@@ -8,22 +8,22 @@ a {
 
 div#album {
     display: inline-block;
-    width: 12em;
-    height: 15em;
+    width: 29.5vh;
+    height: 36vh;
     background: var(--background);
-    border: 5px var(--background) solid;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
+    border: 0.5vh var(--background) solid;
+    border-radius: 2vh;
+    margin-left: 1.6vh;
+    margin-top: 2vh;
 }
 
 div#album > img {
-    height: 12em;
-    width: 12em;
-    border-radius: 10px;
+    height: 29.5vh;
+    width: 29.5vh;
+    border-radius: 2vh;
 }
 
 p {
     text-align: center;
-    font-size: 2em;
+    font-size: 5vh;
 }

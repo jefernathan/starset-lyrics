@@ -13,9 +13,9 @@
 * {
     font-family: VT323, sans-serif;
     color: var(--green);
-    text-shadow: var(--green) 0px 0px 5px;
-    margin: 0px;
-    padding: 0px;
+    text-shadow: var(--green) 0px 0px 1vh;
+    margin: 0vh;
+    padding: 0vh;
 }
 
 html, body {
@@ -41,20 +41,20 @@ main {
     /* 3/4 = .75 */
     max-height: 98vh;
     background-color: var(--black);
-    border-radius: 10px;
+    border-radius: 2vh;
 }
 
 header {
     position: fixed;
     top: 0vh;
     left: 170vh;
-    padding: 10px;
+    padding: 2vh;
 }
 
 header > a > img {
-    border-radius: 10px;
-    width: 3em;
-    height: 3em;
+    border-radius: 2vh;
+    width: 8vh;
+    height: 8vh;
 }
 
 ::-webkit-scrollbar {
@@ -64,5 +64,5 @@ header > a > img {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--dark_green);
-    border-radius: 10px;
+    border-radius: 2vh;
 }
