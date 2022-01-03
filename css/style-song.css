@@ -16,8 +16,8 @@ main {
 
 aside {
     position: fixed;
-    top: 86vh;
-    left: 172vh;
+    bottom: 0;
+    right: 0;
 }
 
 aside > iframe {

@@ -46,8 +46,8 @@ main {
 
 header {
     position: fixed;
-    top: 0vh;
-    left: 170vh;
+    top: 0;
+    right: 0;
     padding: 2vh;
 }
 
