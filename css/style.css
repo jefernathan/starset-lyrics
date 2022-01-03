@@ -57,6 +57,11 @@ header > a > img {
     height: 8vh;
 }
 
+main {
+    overflow-y: scroll;
+    direction: ltr;
+}
+
 ::-webkit-scrollbar {
     background-color: var(--black);
     width: 1.5vh;

@@ -9,11 +9,6 @@ p {
     text-align: center;
 }
 
-main {
-    overflow-y: scroll;
-    direction: ltr;
-}
-
 aside {
     position: fixed;
     bottom: 0;
