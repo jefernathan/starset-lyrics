@@ -4,11 +4,12 @@
 
 h1 {
     font-size: 18vh;
+    width: 110vh;
     text-align: center;
     border: 1vh var(--green) solid;
     box-shadow: var(--green) 0vh 0vh 1vh;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
