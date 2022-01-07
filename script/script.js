@@ -3,7 +3,7 @@ function setCookie(cname, cvalue, exdays) {
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     let expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    setStyleSheet(getCookie('ctheme'));
+    setStyleSheet_index(getCookie('ctheme'));
 }
 
 function getCookie(cname) {
@@ -21,34 +21,32 @@ function getCookie(cname) {
     return "";
 }
 
-function setStyleSheet(theme){
+function setStyleSheet_song(theme){
     var stylesheet = document.getElementById("stylesheet");
     if (theme == 'classic'){
-        try {
-            stylesheet.setAttribute('href', 'css/style-classic.css');
-        }
-        catch {
-            try {
-                stylesheet.setAttribute('href', '../css/style-classic.css');
-            }
-            catch {
-                stylesheet.setAttribute('href', '../../css/style-classic.css');
-            }
-        }
+        stylesheet.setAttribute('href', '../../css/style-classic.css');
     }
     else {
-        try {
-            stylesheet.setAttribute('href', 'css/style.css');
-        }
-        catch {
-            try {
-                stylesheet.setAttribute('href', '../css/style.css');
-            }
-            catch {
-                stylesheet.setAttribute('href', '../../css/style.css');
-            }
-        }
+        stylesheet.setAttribute('href', '../../css/style.css');
     }
 }
 
-window.onload = setStyleSheet(getCookie('ctheme'));
+function setStyleSheet_selection(theme){
+    var stylesheet = document.getElementById("stylesheet");
+    if (theme == 'classic'){
+        stylesheet.setAttribute('href', '../css/style-classic.css');
+    }
+    else {
+        stylesheet.setAttribute('href', '../css/style.css');
+    }
+}
+
+function setStyleSheet_index(theme){
+    var stylesheet = document.getElementById("stylesheet");
+    if (theme == 'classic'){
+        stylesheet.setAttribute('href', 'css/style-classic.css');
+    }
+    else {
+        stylesheet.setAttribute('href', 'css/style.css');
+    }
+}
