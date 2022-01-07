@@ -24,10 +24,30 @@ function getCookie(cname) {
 function setStyleSheet(theme){
     var stylesheet = document.getElementById("stylesheet");
     if (theme == 'classic'){
-        stylesheet.setAttribute('href', '*css/style-classic.css');
+        try {
+            stylesheet.setAttribute('href', 'css/style-classic.css');
+        }
+        catch {
+            try {
+                stylesheet.setAttribute('href', '../css/style-classic.css');
+            }
+            catch {
+                stylesheet.setAttribute('href', '../../css/style-classic.css');
+            }
+        }
     }
     else {
-        stylesheet.setAttribute('href', '*css/style.css');
+        try {
+            stylesheet.setAttribute('href', 'css/style.css');
+        }
+        catch {
+            try {
+                stylesheet.setAttribute('href', '../css/style.css');
+            }
+            catch {
+                stylesheet.setAttribute('href', '../../css/style.css');
+            }
+        }
     }
 }
 
