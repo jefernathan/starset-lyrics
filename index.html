@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="css/style-retro.css"/>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
-    <script src=""></script>
+    <script>
+        function setStyleSheet(url){
+            var stylesheet = document.getElementById("stylesheet");
+            stylesheet.setAttribute('href', url);
+            }
+    </script>
     <title>Starset Lyrics</title>
 </head>
 <body>
     <main>
         <h1 class="index">Starset Lyrics</h1>
-        <a class="index" href="selection/album.html">START</a>
+        <button id="retro" onclick="setStyleSheet('css/style-retro.css')">Retro</button>
+        <a  class="index" href="selection/album.html">START</a>
+        <button id="classic" onclick="setStyleSheet('css/style-classic.css')">Classic</button>
     </main>
 </body>
 </html>

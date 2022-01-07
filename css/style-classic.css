@@ -57,6 +57,28 @@ main {
     overflow-y: scroll;
 }
 
+button#classic {
+    width: 20vh;
+    font-size: 6vh;
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+button#retro {
+    width: 20vh;
+    font-size: 6vh;
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 h1.index {
     font-size: 18vh;
     width: 110vh;
