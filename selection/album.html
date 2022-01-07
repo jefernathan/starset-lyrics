@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="script/script.js"></script>
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
     <title>Starset Lyrics - Album</title>
 </head>
-<body>
+<body onload="setStyleSheet(getCookie('ctheme'))">
     <header>
         <a href="../index.html"><img src="../image/exit.png" alt="exit button"></a>
     </header>
