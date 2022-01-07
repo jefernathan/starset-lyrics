@@ -24,10 +24,10 @@ function getCookie(cname) {
 function setStyleSheet(theme){
     var stylesheet = document.getElementById("stylesheet");
     if (theme == 'classic'){
-        stylesheet.setAttribute('href', 'css/style-classic.css');
+        stylesheet.setAttribute('href', '*/css/style-classic.css');
     }
     else {
-        stylesheet.setAttribute('href', 'css/style.css');
+        stylesheet.setAttribute('href', '*/css/style.css');
     }
 }
 
