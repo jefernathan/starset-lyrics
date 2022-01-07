@@ -30,3 +30,5 @@ function setStyleSheet(theme){
         stylesheet.setAttribute('href', 'css/style.css');
     }
 }
+
+window.onload = setStyleSheet(getCookie('ctheme'));
