@@ -1,19 +1,17 @@
 @font-face {
-    font-family: VT323;
-    src: url(../font/VT323-Regular.ttf);
+    font-family: Caveat;
+    src: url(../font/Caveat-VariableFont_wght.ttf);
 }
 
 :root {
-    --background: #030 ;
+    --background: #707580;
     --black: #000;
-    --dark_green: #0a0;
-    --green: #0f0;
+    --white: #f5f5f5;
 }
 
 * {
-    font-family: VT323, sans-serif;
-    color: var(--green);
-    text-shadow: var(--green) 0px 0px 1vh;
+    font-family: Caveat, cursive;
+    color: var(--black);
     margin: 0vh;
     padding: 0vh;
 }
@@ -53,7 +51,7 @@ main {
     height: 75vw;
     /* 3/4 = .75 */
     max-height: 98vh;
-    background-color: var(--black);
+    background-color: var(--white);
     border-radius: 2vh;
     direction: ltr;
     overflow-y: scroll;
@@ -63,8 +61,7 @@ h1.index {
     font-size: 18vh;
     width: 110vh;
     text-align: center;
-    border: 1vh var(--green) solid;
-    box-shadow: var(--green) 0vh 0vh 1vh;
+    border-bottom: 1vh var(--black) solid;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -95,6 +92,7 @@ div.album_selection {
     border-radius: 2vh;
     margin-left: 1.6vh;
     margin-top: 2vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.album_selection > img {
@@ -104,19 +102,19 @@ div.album_selection > img {
 }
 
 div.album_selection > img#horizons {
-    content: url(../image/Horizons-green.png);
+    content: url(../image/Horizons.jpg);
 }
 
 div.album_selection > img#divisons {
-    content: url(../image/Divisions-green.png);
+    content: url(../image/Divisions.jpg);
 }
 
 div.album_selection > img#vessels {
-    content: url(../image/Vessels-green.png);
+    content: url(../image/Vessels.jpg);
 }
 
 div.album_selection > img#transmissions {
-    content: url(../image/Transmissions-green.png);
+    content: url(../image/Transmissions.jpg);
 }
 
 p.album_selection {
@@ -161,11 +159,11 @@ aside.song > iframe {
 }
 
 ::-webkit-scrollbar {
-    background-color: var(--black);
+    background-color: var(--white);
     width: 1.5vh;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--dark_green);
+    background-color: var(--black);
     border-radius: 2vh;
 }
